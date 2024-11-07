@@ -33,7 +33,7 @@
     "release": "np",
     "remove-dist": "rm -rf dist",
     "build:aliyun-fc3-test": "rm -rf aliyun-fc3-test-dist && esbuild aliyun-fc3-test/index.ts --bundle --outfile=aliyun-fc3-test-dist/index.mjs --platform=node --format=esm",
-    "deploy:aliyun-fc3-test": "s deploy"
+    "deploy:aliyun-fc3-test": "s deploy --function code"
   },
   "exports": {
     ".": {
