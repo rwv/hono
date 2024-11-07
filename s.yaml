@@ -3,7 +3,7 @@ name: fcDeployApp
 access: "hono-aliyun-fc3"
 
 vars:
-  region: "cn-shanghai"
+  region: "us-east-1"
 
 resources:
   hono-aliyun-fc3-test:
