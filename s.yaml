@@ -1,0 +1,19 @@
+edition: 3.0.0
+name: fcDeployApp
+access: "hono-aliyun-fc3"
+
+vars:
+  region: "cn-shanghai"
+
+resources:
+  hono-aliyun-fc3-test:
+    component: fc3
+    props:
+      region: ${vars.region}
+      functionName: "hono-aliyun-fc3-test"
+      description: "hono-aliyun-fc3-test"
+      runtime: "nodejs20"
+      code: ./aliyun-fc3-test-dist
+      handler: index.handler
+      memorySize: 1024
+      timeout: 300
