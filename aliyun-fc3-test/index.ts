@@ -16,4 +16,6 @@ app.all('*', (c) => {
   return c.json({ event, context })
 })
 
-export default handle(app)
+const handler = handle(app)
+
+export { handler }
